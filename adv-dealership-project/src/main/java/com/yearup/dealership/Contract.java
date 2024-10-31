@@ -2,6 +2,7 @@ package com.yearup.dealership;
 
 public abstract class Contract {
 
+    //Phase 1
     //Properties
     private String contractDate;
     private String customerName;
@@ -11,8 +12,8 @@ public abstract class Contract {
     private double monthlyPayment;
 
 //Constructor
-    public Contract(String contractdate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Integer vehicleSold) {
-        this.contractDate = contractdate;
+    public Contract(String contractDate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Integer vehicleSold) {
+        this.contractDate = contractDate;
         this.customerEmail = customerEmail;
         this.customerName = customerName;
         this.monthlyPayment = monthlyPayment;
@@ -26,8 +27,8 @@ public abstract class Contract {
         return contractDate;
     }
 
-    public void setContractdate(String contractdate) {
-        this.contractDate = contractdate;
+    public void setContractDate(String contractDate) {
+        this.contractDate = contractDate;
     }
 
     public String getCustomerEmail() {

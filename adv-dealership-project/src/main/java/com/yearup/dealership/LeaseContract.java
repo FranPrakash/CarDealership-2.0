@@ -1,5 +1,5 @@
 package com.yearup.dealership;
-
+//Phase 1
 public class LeaseContract extends Contract {
 
     private double expectedEndingValue; //50%original price

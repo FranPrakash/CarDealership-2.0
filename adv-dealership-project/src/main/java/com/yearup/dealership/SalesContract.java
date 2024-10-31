@@ -2,18 +2,20 @@ package com.yearup.dealership;
 
 public class SalesContract extends Contract {
 
-    private double salesTaxAmount;
-    private double recordingFee;
+    //Phase 1 Contract
+    private final double salesTaxAmount = 0.05;
+    private final double recordingFee = 100;
     private double processingFee;
     private boolean isFinanced;
 
     //Super Constructor
-    public SalesContract(String contractDate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Integer vehicleSold, boolean isFinanced, double processingFee, double recordingFee, double salesTaxAmount) {
+    public SalesContract(String contractDate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Integer vehicleSold, boolean isFinanced, double processingFee)
+
+     {
         super(contractDate, customerEmail, customerName, monthlyPayment, totalPrice, vehicleSold);
         this.isFinanced = isFinanced;
         this.processingFee = processingFee;
-        this.recordingFee = recordingFee; //$100
-        this.salesTaxAmount = salesTaxAmount; //0.05(5%)
+
     }
 
     //Getters and Setters
@@ -37,16 +39,8 @@ public class SalesContract extends Contract {
         return recordingFee;
     }
 
-    public void setRecordingFee(double recordingFee) {
-        this.recordingFee = recordingFee;
-    }
-
     public double getSalesTaxAmount() {
         return salesTaxAmount;
-    }
-
-    public void setSalesTaxAmount(double salesTaxAmount) {
-        this.salesTaxAmount = salesTaxAmount;
     }
 
 
