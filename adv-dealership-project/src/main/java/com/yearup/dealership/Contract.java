@@ -7,12 +7,12 @@ public abstract class Contract {
     private String contractDate;
     private String customerName;
     private String customerEmail;
-    private Integer vehicleSold;
+    private Vehicle vehicleSold;
     private double totalPrice;
     private double monthlyPayment;
 
 //Constructor
-    public Contract(String contractDate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Integer vehicleSold) {
+    public Contract(String contractDate, String customerEmail, String customerName, double monthlyPayment, double totalPrice, Vehicle vehicleSold) {
         this.contractDate = contractDate;
         this.customerEmail = customerEmail;
         this.customerName = customerName;
@@ -56,12 +56,17 @@ public abstract class Contract {
         this.totalPrice = totalPrice;
     }
 
-    public Integer getVehicleSold() {
+    public Vehicle getVehicleSold() {
         return vehicleSold;
     }
 
-    public void setVehicleSold(Integer vehicleSold) {
+    public void setVehicleSold(Vehicle vehicleSold) {
         this.vehicleSold = vehicleSold;
+    }
+
+    // Print details of the contract
+    public String getContractDetails(){
+        return  contractDate + "|" + customerName + "|" + customerEmail;
     }
 
 //Abstract methods
