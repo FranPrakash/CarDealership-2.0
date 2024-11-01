@@ -39,6 +39,4 @@ public class LeaseContract extends Contract {
     public double getMonthlyPayment() {
         return 0;
     }
-
-
 }

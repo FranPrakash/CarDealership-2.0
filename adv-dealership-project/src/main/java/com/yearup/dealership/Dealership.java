@@ -125,5 +125,3 @@ public class Dealership {
         inventory.removeIf(v -> v.getVin() == vin);
     }
 }
-
-
